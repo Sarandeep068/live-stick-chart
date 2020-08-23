@@ -1,0 +1,27 @@
+{
+  "name": "live-stock",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "create-react-app": "^1.4.3",
+    "eslint": "^5.4.0",
+    "event-stream": "3.3.4",
+    "install": "^0.13.0",
+    "npm": "^6.14.8",
+    "prop-types": "^15.6.0",
+    "react": "next",
+    "react-dom": "next",
+    "react-scripts": "1.0.17",
+    "save": "^2.3.1",
+    "socket.io-client": "^2.3.0"
+  },
+  "scripts": {
+    "prestart": "npm install",
+    "start": "HOST=0.0.0.0 PORT=8000 ./node_modules/.bin/react-scripts start",
+    "pretest": "npm install",
+    "test": "rm -rf ./unit.xml; CI=true TEST_REPORT_FILENAME=./unit.xml ./node_modules/.bin/react-scripts test --verbose --env=jsdom --testResultsProcessor ./node_modules/jest-junit-reporter"
+  },
+  "devDependencies": {
+    "gh-pages": "^3.1.0"
+  }
+}
